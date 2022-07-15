@@ -1,0 +1,35 @@
+<section>
+    <div class="header-style">
+        <h2>Your Cart</h2>
+    </div>
+    <div class="user-id-section">
+        <p>Select User ID to view cart details : </p><br/>
+        <a href="/cart/1">1</a>
+        <a href="/cart/2">2</a>
+        <a href="/cart/3">3</a>
+        <a href="/cart/4">4</a>
+        <a href="/cart/5">5</a>
+    </div>
+    <div class="products-list">
+        <% carts.forEach(cart =>{ %>
+            <div class="products">
+                <center>
+                <img src="<%= cart.image %>" class="product-cover"></center><br/>
+                <h3 class="title"><%= cart.title %></h3>
+                <h3 class="category"><span>Category </span>: <%= cart.category %></h3>
+                <h2 class="price"><span>Price </span>: Rs.<%= cart.price %></h2>
+                <div class="add-rating">
+                    <p class="rating">
+                        <i style="color:#FFDF00;" class="fa fa-star"></i> <%= cart.rating.rate %>
+                    </p>
+                    <a href="/products/<%= cart.id %>">
+                        View
+                    </a>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+    <a href="/" class="back-btn" style="float:right;">
+        Back
+    </a>
+</section>

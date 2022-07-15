@@ -1,0 +1,26 @@
+<section>
+    <div class="header-style">
+        <h2>Fresh Stock</h2>
+    </div><br/>
+    <div class="single-product">
+        <div class="product-img">
+            <center>
+                <img src="<%= product.image %>" class="product-cover">
+            </center>
+        </div>
+        <div class="product-description">
+            <h3 class="title-single"><%= product.title %></h3>
+            <h3 class="category"><span>Category </span>: <%= product.category %></h3>
+            <p class="description"><span>Description </span>: <%= product.description %></p><br/>
+            <h2 class="price"><span>Price </span>: Rs.<%= product.price %></h2><br/>
+            <div class="add-rating">
+                <p class="rating">
+                    <i style="color:#FFDF00;" class="fa fa-star"></i> <%= product.rating.rate %>
+                </p>
+                <a href="/">
+                    Back
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

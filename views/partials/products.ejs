@@ -1,0 +1,25 @@
+<section>
+    <div class="header-style">
+        <h2>Fresh Stock</h2>
+    </div><br/>
+    <div class="products-list">
+        <% products.forEach(product =>{ %>
+            <div class="products">
+                <center>
+                <img src="<%= product.image %>" class="product-cover"></center><br/>
+                <h3 class="title"><%= product.title %></h3>
+                <h3 class="category"><span>Category </span>: <%= product.category %></h3>
+                <!-- <p style="height:60px;"><%= product.description %></p> -->
+                <h2 class="price"><span>Price </span>: Rs.<%= product.price %></h2>
+                <div class="add-rating">
+                    <p class="rating">
+                        <i style="color:#FFDF00;" class="fa fa-star"></i> <%= product.rating.rate %>
+                    </p>
+                    <a href="/products/<%= product.id %>">
+                        Add To Cart
+                    </a>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+</section>
