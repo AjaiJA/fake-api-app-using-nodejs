@@ -1,4 +1,4 @@
-Hello Sir/Ma'am,
+Hi,
 
 After downloading and Extracting the zip file. Install the packges using the below command.
 
@@ -9,5 +9,5 @@ After the packages got installed. use the below command to run the app.
 ### npm start
 
 
-Thanks and Regards,
+Thanks and Regards,<br/>
 Ajai J A
